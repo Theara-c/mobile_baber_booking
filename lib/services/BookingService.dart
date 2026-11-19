@@ -13,7 +13,7 @@ class BookingService {
     List<Booking>? bookings,
   }) : bookings = bookings ?? [];
 
-  // 1. Create booking
+  // Create booking
   Booking? createBooking({
     required String customerId,
     required String shopId,
@@ -56,7 +56,7 @@ class BookingService {
     bookings.add(booking);
     return booking;
   }
-  // 2. merl booking
+  // merl booking
   List<Booking> getMyBookings(String customerId) {
     return bookings.where((booking) {
       return booking.customerId == customerId;
