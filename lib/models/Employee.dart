@@ -1,4 +1,4 @@
-class Baber {
+class Employee {
   final String id;
   final String name;
   final String shopId;
@@ -7,7 +7,7 @@ class Baber {
   final int workEndHour; // 0-23
   final bool isAvailable;
 
-  const Baber({
+  const Employee({
     required this.id,
     required this.name,
     required this.shopId,

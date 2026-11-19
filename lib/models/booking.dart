@@ -4,9 +4,9 @@ class Booking {
   static const double feeRate = 0.20;
 
   final String id;
-  final String baberId;
+  final String employeeId;
   final String customerId;
-  final String baberServiceId;
+  final String employeeServiceId;
   final double bookingFee; 
   final double totalFee;
   final BookingStatus status;
@@ -15,9 +15,9 @@ class Booking {
 
   const Booking({
     required this.id,
-    required this.baberId,
+    required this.employeeId,
     required this.customerId,
-    required this.baberServiceId,
+    required this.employeeServiceId,
     required this.bookingFee,
     required this.totalFee,
     required this.status,
