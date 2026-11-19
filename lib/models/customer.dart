@@ -5,7 +5,7 @@ class Customer {
   final String name;
   final String phoneNumber;
   final String password; 
-  final List<Shop> favouriteShop;
+  final List<String> favouriteShop;
 
   const Customer({
     required this.id,

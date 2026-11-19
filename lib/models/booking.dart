@@ -2,9 +2,9 @@ enum BookingStatus { pending }
 
 class Booking {
   static const double feeRate = 0.20;
-
+    final String shopId;
   final String id;
-  final String employeeId;
+  final String? employeeId;
   final String customerId;
   final String employeeServiceId;
   final double bookingFee; 
@@ -15,8 +15,9 @@ class Booking {
 
   const Booking({
     required this.id,
-    required this.employeeId,
+     this.employeeId,
     required this.customerId,
+    required this.shopId ,
     required this.employeeServiceId,
     required this.bookingFee,
     required this.totalFee,
